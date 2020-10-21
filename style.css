@@ -1,25 +1,29 @@
-@impor@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:wght@700&family=Piazzolla:wght@600&display=swap');t url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Piazzolla:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:wght@700&family=Piazzolla:wght@600&display=swap');
 body {
-  background: grey;
+  background: #d7e5ea;
   font-family: Barlow, sans-serif;
   color: #575f7d;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 120%;
+
 }
 
 h1 {
   color: #8d92b2;
   font-family: Merriweather, serif;
-  font-size: 30px;
-  line-height: 10px;
+  font-size: 28px;
+  line-height: 120%;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 h2 {
   color: #2b3684;
   font-family: Merriweather, serif;
-  font-size: 20px;
-  line-height: 8px;
+  font-size: 18px;
+  line-height: 120%;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 a {
@@ -40,7 +44,7 @@ button {
 }
 
 button a {
-  color: white;
+  color: #d2e9f2;
 }
 
 .container {
@@ -49,7 +53,7 @@ button a {
 }
 
 .card {
-  width: 500px;
+  background: white;
   padding: 40px;
   margin: 20px auto;
   box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
@@ -70,6 +74,25 @@ button a {
 
 #list-inline li {
   display: inline-block;
-  padding 20px;
+  padding-right: 10px;
+}
 
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
 }
